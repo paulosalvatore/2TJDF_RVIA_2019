@@ -4,13 +4,37 @@ using UnityEngine;
 
 public class Zumbi : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
+    Animator anim;
+    Rigidbody rb;
+
+    public float velocidade = 0.35f;
+
+    // Use this for initialization
+    void Start () {
+        anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+        rb.velocity = transform.forward * velocidade;
 	}
+
+    void OnTriggerEnter(Collider other)
+    {
+        // Exibo a tag do collider trigger que ativou
+        print("OnTriggerEnter Zumbi: " + other.tag);
+
+        // Verifico se a tag do trigger é igual a "Projétil"
+        if (other.CompareTag("Projétil"))
+        {
+            // Objeto other verificado. É o projétil
+            // Destrói o gameObject do projétil
+            Destroy(other.gameObject);
+
+            // Destrói o zumbi que foi atingido
+            //Destroy(gameObject);
+            anim.SetTrigger("Morrer");
+        }
+    }
 }
