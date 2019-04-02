@@ -179,23 +179,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &377568571 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1311583890142986, guid: 0d0e9e4fa5e2db44c997718342e74a4c,
-    type: 2}
-  m_PrefabInternal: {fileID: 502242056}
---- !u!114 &377568572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 377568571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25d415526c433754989c260a8c8c00ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidade: 0.35
 --- !u!1001 &466129772
 Prefab:
   m_ObjectHideFlags: 0
@@ -391,6 +374,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 626b1f57c1c8c8340a7b07ba6ca070da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 2
+  zumbiPrefab: {fileID: 1311583890142986, guid: 0d0e9e4fa5e2db44c997718342e74a4c,
+    type: 2}
+  area: 3
 --- !u!4 &1311697410
 Transform:
   m_ObjectHideFlags: 0

@@ -368,6 +368,7 @@ GameObject:
   - component: {fileID: 95481852181047580}
   - component: {fileID: 54844670466639376}
   - component: {fileID: 136615178160551164}
+  - component: {fileID: 114248009322630652}
   m_Layer: 0
   m_Name: Zumbi
   m_TagString: Zumbi
@@ -1529,6 +1530,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114248009322630652
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1311583890142986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25d415526c433754989c260a8c8c00ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidade: 0.35
 --- !u!136 &136615178160551164
 CapsuleCollider:
   m_ObjectHideFlags: 1
